@@ -1,0 +1,110 @@
+/*CSS Topo*/
+.topo {
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    background-color: black;
+    border-bottom: 1px solid blue;
+} 
+
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.icone-titulo {
+    width: 130px;
+    height:90px;
+    border-radius: 80px;
+    padding-right: 0;
+}
+
+.link-topo {
+    text-transform: uppercase;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 0;
+    margin: 0 50px 0 50px;
+    color: #daa520
+}
+
+.link:hover {
+    border-bottom: 3px solid #6592c9;
+}
+
+.titulo-site {
+    height: 860px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #2eb52e;
+}
+
+.titulo-site-descricao {
+    width: 500px;
+    color: #fff;
+    font-size: 23px;
+    background-color: #0a9077b3;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.titulo-site-descricao p {
+    font-size: 21px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1024px)  {
+    .topo .container {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    .img-top {
+        border-bottom: 1px solid #ff0000;
+    }
+    .link-topo {
+        margin: 0px 20px 0px 20px;
+        font-size: 16px;
+    }
+
+} 
+@media only screen and (max-width: 700px) {
+    .topo .container {
+        height: 110px;
+    }
+    .titulo-site {
+        background-image: url('imgs/qm2logo.jpg');
+        height: 87vh;
+    }
+
+    .link-topo {
+        display: none;
+    }
+
+    .img-top { 
+        margin: 0px auto;
+    }
+    
+    .icone-titulo {
+        width: 100px;
+        height: 80px;
+        border-radius: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-site {
+        height: 550px;
+    }
+
+    .titulo-site-descricao, .titulo-site-descricao p {
+        font-size: 15px;
+    }
+}
