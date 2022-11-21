@@ -20,7 +20,6 @@
 </head>
 
 <body>
-    <div class="progress"></div>
     <header>
         <div class="topo">
             <div class="container">
@@ -342,29 +341,9 @@
                 <h3>
                     Criado por: Henrique Silva
                 </h3>
-                <div class="linkdln-link">
-                    <a href="https://www.linkedin.com/in/jos%C3%A9-henrique-da-silva-barbosa-3551a1221/"
-                        title="Página do Linkedin" target="_blank">
-                        <div class="link-img">
-                            <img src="icon/linkedin.png" alt="Ícone do Linkedin">
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
     </footer>
-    <script>
-        let progress = document.querySelector(".progress")
-        function progressBar() {
-            const atual = window.pageYOffset
-            const total = 2954
-            const progresso = parseInt(atual / total * 100)
-            progress.style.width = progresso + "%"
-            progress.innerHTML = progresso + "%"
-            document.body.onscroll = () => progressBar()
-        }
-        progressBar()
-    </script>
 </body>
 
 </html>
