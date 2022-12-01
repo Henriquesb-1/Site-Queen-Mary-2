@@ -89,8 +89,21 @@
         height: 450px;
     }
 }
+@media screen and (max-width: 750px) {
+   .slide-icon-svg {
+        width: 35px;
+        height: 35px;
+    }
+}
 @media screen and (max-width: 510px) {
     .atracaoImage img {
         height: 300px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+   .slide-icon-svg {
+        width: 25px;
+        height: 25px;
     }
 }
