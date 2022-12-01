@@ -1,0 +1,96 @@
+#atracao {
+    display: flex;
+    justify-content: center;
+}
+.atracao-container {
+    margin: 0 auto;
+}
+.atracaoDescricao, .atracao-title-container{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.atracaoDescricao {
+    background-color: hsla(190, 30%, 20%, 0.95);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(20, 20, 150, 0.2);
+}
+.atracaoImage {
+    width: 100%;
+}
+.atracaoImage img {
+    width: 100%;
+    height: 600px;
+}
+
+.slideGroup { 
+    width: 1000px;
+    overflow: hidden;
+    border: 3px solid rgba(20, 20, 20, 0.8);
+    border-radius: 15px;
+    box-shadow: 2px 4px rgba(50, 50, 200, 0.5);
+
+    position: relative;
+}
+.slide {
+    width: 100%;
+}
+.slide-control {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 400%;
+}
+.slideContent {
+    position: relative;
+    transition: ease 2s;
+}
+.slide-icon-svg {
+    width: 45px;
+    height: 45px;
+}
+
+.previous-slide-icon, .next-slide-icon {
+    position: absolute;
+    top: 45%;
+
+    z-index: 20;
+
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+
+    cursor: pointer;
+}
+.previous-slide-icon {
+    left: 0;
+}
+.next-slide-icon {
+    right: 0;
+}
+.next-slide-icon:disabled, .previous-slide-icon:disabled {
+    animation: hide 0.5s forwards;
+}
+@keyframes hide {
+    0% { opacity: 0.8;}
+    25% { opacity: 0.6;}
+    75% { opacity: 0.4;}
+    100% { opacity: 0.2;}
+}
+
+@media screen and (max-width: 1030px) {
+    #atracao {
+        display: block;
+    }
+    .slideGroup {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .atracaoImage img {
+        height: 450px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .atracaoImage img {
+        height: 300px;
+    }
+}

@@ -1,0 +1,20 @@
+.footer-container {
+    display: grid;
+    place-items: center;
+    margin: 50px 0 0 0;
+    background-color: hsla(190, 30%, 20%, 0.95);
+    height: 150px;
+    width: 100%;
+}
+.link-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.footer-container h3, .footer-container span {
+    text-align: center;
+}
+.footer-container a {
+    text-decoration: none;
+    color: #fff;
+}
